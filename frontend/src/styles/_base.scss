@@ -44,6 +44,11 @@ html {
         font-size: 14px;
     }
 
+    // 2048x1152
+    @media (max-width: 2048px) {
+        font-size: 13px;
+    }
+
     // 1920x1080
     @media (max-width: 1920px) {
         font-size: 12px;
