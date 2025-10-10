@@ -37,5 +37,25 @@ h1, h2, h3, h4, h5, h6, p, span, label {
 }
 
 html {
-    font-size: 10px;
+    font-size: 16px; // Default (4k and up)
+
+    // 2560x1440 (QHD)
+    @media (max-width: 2560px) {
+        font-size: 14px;
+    }
+
+    // 1920x1080 (FHD)
+    @media (max-width: 1920px) {
+        font-size: 12px;
+    }
+
+    // 1366x768 (HD+)
+    @media (max-width: 1366px) {
+        font-size: 10px;
+    }
+
+    // 1280x720 (HD)
+    @media (max-width: 1280px) {
+        font-size: 8px;
+    }
 }
