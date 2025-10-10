@@ -37,40 +37,5 @@ h1, h2, h3, h4, h5, h6, p, span, label {
 }
 
 html {
-    font-size: 16px; // Default (3680x2160 and up)
-
-    // 2560x1440
-    @media (max-width: 2560px) {
-        font-size: 14px;
-    }
-
-    // 2048x1152
-    @media (max-width: 2048px) {
-        font-size: 13px;
-    }
-
-    // 1920x1080
-    @media (max-width: 1920px) {
-        font-size: 12px;
-    }
-
-    // 1536x864
-    @media (max-width: 1536px) {
-        font-size: 11px;
-    }
-
-    // 1440x900
-    @media (max-width: 1440px) {
-        font-size: 10px;
-    }
-
-    // 1366x768
-    @media (max-width: 1366px) {
-        font-size: 9px;
-    }
-
-    // 1280x720
-    @media (max-width: 1280px) {
-        font-size: 8px;
-    }
+  font-size: calc(16 * (100vw / 2560));
 }
