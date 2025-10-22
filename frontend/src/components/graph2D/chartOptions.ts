@@ -526,10 +526,12 @@ export function createActiveIndexLabel(
     text = `${config.xAxis.name}: ${x.toFixed(2)}${xUnit}`;
   }
 
+  const chartTop = config.title ? LAYOUT.GRID.TOP_WITH_TITLE : LAYOUT.GRID.TOP_WITHOUT_TITLE;
+
   return [{
     type: 'text',
     left: LAYOUT.GRID.LEFT,
-    top: (config.title ? LAYOUT.GRID.TOP_WITH_TITLE : LAYOUT.GRID.TOP_WITHOUT_TITLE) / 3,
+    top: (chartTop + LAYOUT.TITLE.TOP) / 2,
     style: {
       text,
       fill: COLORS.TEXT,
